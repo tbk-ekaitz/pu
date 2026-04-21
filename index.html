@@ -40,8 +40,15 @@
       flex-shrink: 0;
       border-right: 6px solid var(--allianz-light-blue);
       box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: width 0.4s ease, padding 0.4s ease, opacity 0.4s ease;
     }
-    .sidebar.hidden { display: none; }
+    .sidebar.hidden {
+      width: 0;
+      padding-left: 0;
+      padding-right: 0;
+      opacity: 0;
+    }
     .sidebar h2 { font-size: 22px; margin-bottom: 35px; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 15px; letter-spacing: 1px; }
     .sidebar ul { list-style: none; padding: 0; }
     .sidebar li { margin-bottom: 18px; }
