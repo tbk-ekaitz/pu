@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>實習成果發表 - 裕祥</title>
+  <style>
+    :root {
+      --allianz-blue: #003366;
+      --allianz-light-blue: #0055a5;
+      --bg-gray: #f5f5f5;
+      --text-dark: #333;
+    }
+    body { font-family: "Microsoft JhengHei", Arial, sans-serif; margin:0; padding:0; background: var(--bg-gray); color: var(--text-dark); }
+    
+    .nav-container { display: flex; min-height: 100vh; }
+
+    /* 側邊導覽列 */
+    .sidebar { 
+      width: 260px; 
+      background: var(--allianz-blue); 
+      color: white; 
+      padding: 40px 20px; 
+      flex-shrink: 0;
+      border-right: 6px solid var(--allianz-light-blue);
+      box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+    }
+    .sidebar h2 { font-size: 22px; margin-bottom: 35px; border-bottom: 1px solid rgba(255,255,255,0.2); padding-bottom: 15px; letter-spacing: 1px; }
+    .sidebar ul { list-style: none; padding: 0; }
+    .sidebar li { margin-bottom: 18px; }
+    .sidebar a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 17px; transition: 0.3s; display: block; padding: 8px 0; }
+    .sidebar a:hover, .sidebar a.active { color: #fff; font-weight: bold; padding-left: 10px; border-left: 4px solid #fff; }
+
+    /* 右側主內容區 */
+    .main-content { flex-grow: 1; display: flex; flex-direction: column; }
+    
+    .banner { background: var(--allianz-blue); color:white; padding:70px 20px; text-align:center; border-bottom: 5px solid var(--allianz-light-blue); }
+    .banner h1 { margin:0; font-size:38px; letter-spacing: 3px; }
+    .banner p { font-size:19px; margin-top:15px; opacity: 0.85; }
+
+    .content-box { 
+      background:white; 
+      padding:50px; 
+      max-width:750px; 
+      margin: -40px auto 50px auto; 
+      box-shadow:0 15px 35px rgba(0,0,0,0.1); 
+      border-radius: 15px; 
+      flex-grow: 1;
+      line-height: 1.8;
+    }
+    
+    .section-title { color: var(--allianz-blue); border-left: 6px solid var(--allianz-light-blue); padding-left: 20px; margin-bottom: 25px; font-size: 26px; font-weight: bold; }
+    
+    .highlight-card {
+      background: #eef4f9;
+      padding: 25px;
+      border-radius: 10px;
+      margin-top: 30px;
+      border-left: 5px solid var(--allianz-light-blue);
+    }
+
+    footer { background: var(--allianz-blue); color:rgba(255,255,255,0.6); text-align:center; padding:30px; font-size:14px; }
+
+    @media (max-width: 850px) {
+      .nav-container { flex-direction: column; }
+      .sidebar { width: 100%; border-right: none; border-bottom: 6px solid var(--allianz-light-blue); padding: 25px; box-sizing: border-box; }
+      .sidebar ul { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; }
+      .sidebar li { margin-bottom: 0; }
+      .content-box { margin: 20px; padding: 30px; }
+      .banner h1 { font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="nav-container">
+    <!-- 左側導覽列 -->
+    <nav class="sidebar">
+      <h2>實習成果導覽</h2>
+      <ul>
+        <li><a href="#" class="active">首頁導覽</a></li>
+        <li><a href="#">公司介紹</a></li>
+        <li><a href="#">自我介紹</a></li>
+        <li><a href="#">裕祥-實習內容</a></li>
+        <li><a href="#">實習心得</a></li>
+      </ul>
+    </nav>
+
+    <!-- 右側主內容 -->
+    <div class="main-content">
+      <div class="banner">
+        <h1>銀國際股份有限公司</h1>
+        <p>2026 實習成果發表會</p>
+      </div>
+
+      <div class="content-box">
+        <div class="section-title">歡迎來到實習成果發表</div>
+        <p>你好，我是<strong>李裕祥</strong>。在安聯人壽<strong>家鼎通訊處</strong>實習期間，我致力於深耕壽險產業的專業知識，並學習如何為客戶提供最切實的保障規劃。</p>
+        
+        <div class="highlight-card">
+          <p style="margin:0;"><strong>當前目標：</strong> 透過數據洞察與需求分析，縮短民眾的「保障缺口」，落實保險真正的核心價值。</p>
+        </div>
+
+        <p style="margin-top: 30px; color: #666;">請透過左側選單（行動裝置請見上方選單）切換查看各個實習階段的詳細紀錄。</p>
+      </div>
+
+      <footer>
+        <p>&copy; 2026 安聯人壽保險股份有限公司 | 裕祥 實習成果發表</p>
+      </footer>
+    </div>
+  </div>
+
+</body>
+</html>
